@@ -53,12 +53,9 @@ void loop_lifebar(general_t *all)
         all->item->serie_1 = 0;
     if (all->item->nbr_s2 <= 0)
         all->item->serie_2 = 0;
-<<<<<<< HEAD
     loop_sat(all);
     loop_obj(all);
-    /*if (all->index_map == 4)
-        boss_lifebar(all);*/
-=======
+    if (all->index_map == 4)
+        boss_lifebar(all);
     loop_sat(all); loop_obj(all);
->>>>>>> 834983a01a818226712917bacb51c87b1b50fcdb
 }
